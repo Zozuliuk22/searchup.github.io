@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Slider</title>
+
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css'>
+	<script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>	
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>	
+	<script type='text/javascript' src='unitegallery/themes/slider/ug-theme-slider.js'></script>
+    <script type='text/javascript' src="slider.js"></script>
+    <link rel="stylesheet" href="sliderstyle.css">
+</head>
+
+<body>
+    <div id="gallery" style="display:none;">
+        <img alt="Background Changer" data-type="youtube" 
+            data-videoid="0KVCxIg0LDw" 
+            data-description="Change Body Background Color Using Color Box - Java Script">
+        <img alt="Menu Navigation" data-type="youtube"
+            data-videoid="kiKxIz2mXtU"
+            data-description="Create Awesome Menu Navigation With Toggle Using Only HTML & CSS & JQuery">
+        <img alt="Hover Effects" data-type="youtube"
+            data-videoid="cPDhSnydAjE"
+            data-description="Awesome Hover Effects On Image Box Only By Using HTML & CSS">>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles/style.css">
+      <title>Blocks</title>
+  </head>
+  <body>
+    <div class = "header">
+      <div class = "search"></div><h1 class = "top">1</h1>
+    </div>
+    <div class = "container">
+      <div class = "sidebar1">
+        <h1>2</h1>
+      </div>
+      <div class = "sidebar2">
+        <h1>3</h1>
+      </div>
+      <div class = "sidebar3">
+        <h1>4</h1>
+      </div>
+      <div class = "sidebar4">
+        <h1>5</h1>
+      </div>
+    </div>
+    <div class = "footer">
+      <h1>6</h1>
+    </div>
+  </body>
+</html>

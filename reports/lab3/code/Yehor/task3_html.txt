@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <title>Лабораторна робота 3</title>
+  </head>
+
+  <body>
+      <header class="header">
+            <ul class="menu">
+              <li><a href="#">Форми навчання</a></li>
+              <li><a href="#">Заходи</a></li>
+              <li><a href="#">Про Академію</a></li>
+              <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Контакти</a></li>
+              <li class="location_button"><a href="#">Київ</a></li>
+            </ul>
+            <div class="header_inner">
+              <p class="headline">ПРОГРАММА КУРСУ</p>
+              <p class="headline2">REACT</p>
+            </div>
+      </header>
+        <div class="intro">
+            <div class="intro_left">
+              <figure>
+                <img class="hour" src="assets/images/40hour.png" alt="40HOUR">
+                <div>ОПАНУЙ REACT ЗА 20<br>ЗАНЯТЬ</div>
+              </figure>
+              <ol class="list">
+                <li class="chosenPoint">ВСТАНОВЛЕННЯ REACT</li>
+                <li>КЛАСОВІ КОМПОНЕНТИ</li>
+                <li>STATE & PROPS</li>
+                <li>DATA FORWARDING &<br>PROPS DRILLING</li>
+                <li>LIFECYCLE HOOKS</li>
+                <li>ФУНКЦІОНАЛЬНІ<br>КОМПОНЕНТИ</li>
+                <li>ROUTING</li>
+                <li>HOOKS</li>
+                <li>REDUX</li>
+              </ol>
+            </div>
+            <div class="intro_right">
+              <img class="back" src="assets/images/back.jpg" alt="back">
+              <a class="subscr_btn" href="#">Записатись на курс</a>
+            </div>
+        </div>
+        <div class="price_list">
+          <div class="corner">Стаціонар</div>
+          <div class="lists">
+            <div class="list_item">
+                <div class="header_list">Minimal</div>
+                <ol>
+                  <li>40 годин</li>
+                  <li>2 місяців</li>
+                  <li>12 годин в тиждень</li>
+                  <li>Розтермінування до 24 міс.</li>
+                  <li class="opacity">Безкоштовне повторне<br>проходження курсу</li>
+                  <li class="opacity">Особистий ментор</li>
+                </ol>
+                <div class="container">
+                  <div class="crossed">17 000 грн</div>
+                  <div class="non-crossed">8 500 грн</div>
+                  <p>3 вільних місць</p>
+                  <a class="subscr_course" href="#">Записатись на курс</a>
+                </div>
+            </div>
+            <div class="list_item">
+              <div class="header_list">Pro</div>
+                <ol>
+                  <li>40 годин</li>
+                  <li>2 місяців</li>
+                  <li>12 годин в тиждень</li>
+                  <li>Розтермінування до 24 міс.</li>
+                  <li>Безкоштовне повторне<br>проходження курсу</li>
+                  <li>Особистий ментор</li>
+                </ol>
+                <div class="container">
+                  <div class="crossed">25 000 грн</div>
+                  <div class="non-crossed">12 500 грн</div>
+                  <p>3 вільних місць</p>
+                  <a class="subscr_course" href="#">Записатись на курс</a>
+                </div>
+            </div>
+            <div class="list_item">
+              <div class="header_list">Індивідуально</div>
+                <div class="description">
+                  Об'єм, навантаження, тривалість<br>
+                  визначаються індивідуально для<br>
+                  кожного студента його<br> 
+                  персональним ментором.
+                </div>
+                <div class="container">
+                  <div class="crossed">100 000 грн</div>
+                  <div class="non-crossed">51 000 грн</div>
+                  <p>1 вільне місце</p>
+                  <a class="subscr_course" href="#">Записатись на курс</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="low_header">
+          <div>
+            <h1>Навчайся зараз</h1>
+            <h2>Сплачуй потім</h2>
+            <p>розтермінування платежів до 24 місяців</p>
+          </div>
+          <a class="subscr_btn" href="#">Дізнатись деталі</a>
+        </div>
+        <div class="bottom_part">
+          <div>
+            <h1>Комплексний курс<br>
+              Тестування QA
+            </h1>
+            <p>Такого крутого Тестування ще не було!</p>
+            <div class="sub">Найбільший та найкращий курс тестування в Україні. Гарантія<br>працевлаштування. Найбільший набір технологій</div>
+            <a class="book_place" href="#">Забронювати місця</a>
+          </div>
+          <img class="dude" src="assets/images/dude.png" alt="dude">
+        </div>
+  </body>
+
+</html>

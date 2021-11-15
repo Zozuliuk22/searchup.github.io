@@ -1,0 +1,15 @@
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    text-align: center;
+    flex: 1;
+}

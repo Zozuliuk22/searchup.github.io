@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles/style.css">
+      <title>Home</title>
+      <base target="_blank">
+  </head>
+  <body>
+    <header class = "header">
+      <div class = "header_suptitle">
+        ЕФЕКТИВНІ МЕТОДИ НАВЧАННЯ
+      </div>
+      <div class = "header_title">
+        100% ЗАСВОЄННЯ МАТЕРІАЛУ
+      </div>
+      <div class = "container">
+        <div class = "header_left">
+          Починаючи з 2016 року ми відточували наші методи навчання і знайшли найбільш дієвий спосіб, який дає можливість студентам опановувати програму краще і в більшому об'ємі.
+
+            <ul class="list">
+              <li>Лекційний матеріал подається окремо. Це дає змогу зосередитись на ознайомленні з ним не відволікаючись на виконання будь-яких дій.</li>
+              <li>Практичні заняття проходять в окремі дні і включають завдання по попередній лекції. При цьому, частина завдань не містить абстрактних умов. Це дає змогу чітко закріпити пройдений матеріал. Але є завдання, які змусять вас розвиватись,оскільки будуть вже більш абстрактними, і їх виконання буде залежити від вашої уяви.</li>
+              <li>Як результат поєднання попередніх фактори ви опануєте теоретичну частину, закріпите її на практиці в двох різновидах завдань.</li>
+            </ul>
+        </div>
+        <div class = "header_right">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SUUKIvxkOIE" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+          </iframe>
+          <a href="https://www.youtube.com/watch?v=SUUKIvxkOIE&ab_channel=OktenSchool" class="button">всі відгуки</a>
+        </div>
+      </div>
+    </header>
+
+    <div class = "content_top_suptitle">
+      НАШІ КУРСИ ПРОГРАМУВАННЯ
+    </div>
+    <div class = "content_top_title">
+      ОБЕРИ НАПРЯМОК ПРОГРАМУВАННЯ
+    </div>
+
+    <div class = "content_top">
+        <div class="container_content_top">
+          <div class = "box">
+            <img class = "icon_course" alt = "Java symbol" src="images/java.svg">
+            <div class = "text_in_box">JAVA<br>COMPLEX</div>
+            <a href = "https://ru.wikipedia.org/wiki/Java" class = "more_button">Детальніше</a>
+          </div>
+          <div class = "box">
+            <img class = "icon_course" alt = "Java symbol" src="images/JS.svg">
+            <div class = "text_in_box">JAVASCRIPT<br>COMPLEX</div>
+            <a href = "https://ru.wikipedia.org/wiki/JavaScript" class = "more_button">Детальніше</a>
+          </div>
+          <div class = "box">
+            <img class = "icon_course" alt = "Python symbol" src="images/python.svg">
+            <div class = "text_in_box">PYTHON<br>COMPLEX</div>
+            <a href = "https://ru.wikipedia.org/wiki/Python" class = "more_button">Детальніше</a>
+          </div>
+          <div class = "box">
+            <img class = "icon_course" alt = "QA/QC symbol" src="images/QA.svg">
+            <div class = "text_in_box">QA/QC<br>COMPLEX</div>
+            <a href = "https://testmatick.com/ru/v-chem-raznitsa-mezhdu-qa-i-qc/" class = "more_button">Детальніше</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="content_bottom">
+      <div class = "container_content_bottom">
+        <div class = "video2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KsPLJ7TRRgY" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe><br><br>
+          <p>Відгук Loonar про випусників Okten</p>
+        </div>
+        <div class = "results">
+          <div class = "content_bottom_suptitle">
+            РОБОТОДАВЦІ ЗАДОВОЛЕНІ
+          </div>
+          <div class = "content_bottom_title">
+            НАШИМИ ВИПУСКНИКАМИ
+          </div>
+          <a href = "https://www.epam-group.ru/"><img src="images/epam.png" alt="epam"></a>
+          <a href = "https://incorainc.com/"><img src="images/incora.png" alt="incora"></a>
+          <a href = "https://www.binariks.com/"><img src="images/binariks.png" alt="binariks"></a>
+          <a href = "https://rolique.io/"><img src="images/rolique.png" alt="rolique"></a>
+          <a href = "https://eleks.com/"><img src="images/eleks.png" alt="eleks"></a>
+          <a href = "https://www.globallogic.com/ua/careers/"><img src="images/globallogic.png" alt="globallogic"></a>
+          <a href = "https://intetics.com/"><img src="images/intetics.png" alt="intetics"></a>
+          <a href = "https://www.softserveinc.com/uk-ua"><img src="images/softserve.png" alt="softserve"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class = "container_footer">
+          <div class = "copyright_symbol">
+            ©
+          </div>
+          <div class = "copyright_text">
+            2021
+          </div>
+      </div>
+      <a href = "https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+      <a href = "https://vk.com/"><img src="images/vk.png" alt="vk"></a>
+      <a href = "https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a>
+      <a href = "https://web.telegram.org/z/"><img src="images/telegram.png" alt="telegram"></a>
+      <a href = "https://www.instagram.com/?hl=ru"><img src="images/instagram.png" alt="instagram"></a>
+    </footer>
+  </body>
+</html>

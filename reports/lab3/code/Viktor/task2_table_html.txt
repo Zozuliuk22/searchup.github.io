@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styles/style.css">
+      <title>Table</title>
+  </head>
+  <body>
+      <table class="model">
+        <tr>
+          <td colspan="7" class="row1">
+            <table class = "model_top">
+              <tr>
+                <td class = "top_search">
+                </td>
+                <td>
+                  <h1>1</h1>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="col2">
+            <h1>2</h1>
+          </td>
+          <td class="spacer">
+          </td>
+          <td class="col3">
+            <h1>3</h1>
+          </td>
+          <td class="spacer">
+          </td>
+          <td class="col4">
+            <h1>4</h1>
+          </td>
+          <td class="spacer">
+          </td>
+          <td class="col5">
+            <h1>5</h1>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="7" class="row6">
+            <h1>6</h1>
+          </td>
+        </tr>
+      </table>
+  </body>
+</html>

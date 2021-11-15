@@ -1,0 +1,258 @@
+html, body{
+    height: 100%;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: black;  
+}
+
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;  
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, ul{
+    margin:0;
+    padding: 0;
+}
+
+/*header*/
+
+.header {
+    width: 100%;
+}
+
+.menu{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu a{
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding-left: 25px ;
+    padding-right: 25px ;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.location_button a{
+    background-color: #2D2D2D;
+    padding-left: 189px;
+    padding-right: 189px;
+}
+
+.menu li{
+    display: inline;
+}
+
+.header_inner{
+    padding-top: 50px;
+}
+
+.headline{
+    text-align: center;
+    font-size: 18px;
+    color: #FF9333;
+}
+
+.headline2{
+    text-align: center;
+    font-size: 36px;
+    color: black;
+}
+
+/*intro*/
+
+.intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+}
+
+.intro_left, .intro_right{
+    display: flex;
+}
+
+.intro_right{
+    flex-direction: column;
+}
+
+.list{
+    line-height: 40px;
+}
+
+.subscr_btn{
+    padding: 18px 75px;
+    text-align: center;
+    background-color: #FFE200;
+    margin-top: auto;
+    border-radius: 5px;
+    color: black;
+}
+
+.chosenPoint{
+    color: #3298F2;
+}
+
+/*price_list*/
+
+.price_list{
+    margin-top: 40px;
+    background-color: #3298F2;
+}
+
+.corner{
+    background-image: url(../images/background_image.png);
+    background-repeat: no-repeat;
+}
+
+.lists{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.list_item{
+    border:1px white solid;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 11px 55px;
+}
+
+.header_list{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 16px;
+}
+
+.opacity{
+    list-style-image: none;
+    opacity: 40%;
+}
+
+.list_item ol{
+    font-size: 13px;
+    line-height: 25px;
+    list-style: none;
+    list-style-image: url("../images/checkMark.jpg");
+}
+
+.container{
+    margin-top: auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+.crossed{
+    color:#2D96F1;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    font-size: 24px;
+}
+
+.non-crossed{
+    color:#2D96F1;
+    font-size: 24px;
+}
+
+.list_item p{
+    color:#2D96F1;
+    font-size: 11px;
+}
+
+.description{
+    font-size: 13px;
+}
+
+.subscr_course{
+    background-color: #FFE200;
+    color:black;
+    font-size: 13px;
+    padding: 10px 38px;
+}
+
+/*low_header*/
+
+.low_header{
+    margin-top: 40px;
+    background-color: #3298F2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 44px 0;
+}
+
+.low_header h1{
+    color:white;
+    font-size: 24px;
+}
+
+.low_header h2{
+    font-size: 36px;
+
+}
+
+.low_header p{
+    padding-top: 20px;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*bottom_part*/
+
+.bottom_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.bottom_part h1{
+    color: #FF9637;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.bottom_part p{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.sub{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+.book_place{
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #3298F2;
+    color: black;
+}
+
+.dude{
+    width: 40%;
+}
