@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="padding">
+            <table class="layout" cellspacing="0">
+                <tr>
+                    <td colspan="3" class="blueRow">1</td>
+                </tr>
+                <tr class="long">
+                    <td class="yellowBlock">2</td>
+                    <td class="whiteBlock">4</td>
+                    <td class="yellowBlock">5</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="blueRow">3</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

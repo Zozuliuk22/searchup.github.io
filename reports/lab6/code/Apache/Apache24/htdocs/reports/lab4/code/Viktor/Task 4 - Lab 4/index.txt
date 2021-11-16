@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Task 4</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="main">
+    <h2>Завдання 4. Зозулюк Віктор</h2>
+    <h3>Постановка задачі</h3>
+    <h4>Створити одновимірний масив, кількість елементів якого задана користувачем. Обчислити суму елементів між максимальним та мінімальними значеннями масиву.
+      <br>
+      Упорядкувати масив у порядку зростання.(метод Швидкого сортування). Надрукувати вхідний та вихідний масив.
+      <br>
+      Застосувати функції
+    </h4>
+    <h3>Виконання задачі</h3>
+    <input type="text" name="enter" placeholder="Введіть розмір масиву" id="array_size"></input>
+    <input type="button" value="Надіслати на обробку" OnClick="main()"></input>
+    <script type="text/javascript" src = "js/script_array.js"></script>
+    <h4 id="size"></h4>
+    <h4>Згенерований масив : </h4>
+    <h3 id="array_first"></h3>
+    <h3 id="max"></h3>
+    <h3 id="min"></h3>
+    <h3 id="sum"></h3>
+    <h4>Вхідний масив : </h4>
+    <h3 id="array_second"></h3>
+    <h4>Вихідний масив : </h4>
+    <h3 id="array_sorted"></h3>
+  </div>
+</html>

@@ -1,0 +1,69 @@
+function generate(arr, n) { // generate array with random numbers
+    for (let i = 0; i < n; i++) {
+        let value = Math.floor(Math.random() * 10 - 5);
+        arr.push(value);
+    }
+    return arr;
+}
+
+function divideArray(arr1, arr2, arr3) {
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] < 0) {
+            arr2.push(arr1[i]);
+        }
+        else {
+            arr3.push(arr1[i]);
+        }
+    }
+}
+
+function findMax(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) { max = arr[i] };
+    }
+    return max;
+}
+
+function findMin(arr) {
+    let min = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < min) { min = arr[i] };
+    }
+    return min;
+}
+
+function selectionSort(array){
+    for(var i = 0; i < array.length; i++){
+      var min = i;
+      for(var j = i+1; j < array.length; j++){
+        if(array[j] < array[min]){
+         min = j;
+        }
+      }
+      var temp = array[i];
+      array[i] = array[min];
+      array[min] = temp;
+    }
+    return array;
+  };
+
+
+let n = prompt("Enter number of elements in an array: ");
+let arr1 = [], arr2 = [], arr3 = [];
+result1 = generate(arr1, n);
+
+divideArray(arr1, arr2, arr3);
+
+console.log("First array: " + result1);
+
+console.log("Second array: " + arr2);
+console.log("Third array: " + arr3);
+
+
+
+console.log("Max element from -: " + findMax(arr2));
+console.log("Min element from +: " + findMin(arr3));
+
+console.log("Unsorted array: " + arr1);
+console.log("Sorted array: " + selectionSort(arr1));

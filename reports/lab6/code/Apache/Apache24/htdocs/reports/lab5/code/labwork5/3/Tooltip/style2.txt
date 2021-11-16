@@ -1,0 +1,71 @@
+.registration{
+	width : 40%;
+	margin: auto;
+	padding: 0 20px;
+	background-color: #F5F5DC;
+	border:dashed #153131;
+}
+
+.text-field{
+	display: block;
+	width: 80%;
+}
+
+.text{
+	width: 40%;
+}
+
+/* дочірній селектор (під дочірніми маються наувазі тільки перші нащадки span предка h4)*/
+h4 > span{
+	font-size: 15px;
+}
+
+/* сусідній селектор */
+input[type="checkbox"] + span{
+	font-weight: 300;
+}
+
+/* id селектор */
+#send-button {
+	padding: 5px 8px;
+	color: white;
+	background-color: #153131;
+	font-size: 20px;
+	border-radius: 8px;
+	border-style: none;
+}
+
+.space{
+	width: 100%;
+    height: 15vh;
+}
+
+.calendar_created_block{
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td,th {
+	border: 1px solid black;
+	text-align: center;
+}
+
+#left_year{
+	margin-right: 15px;
+}
+
+#right_year{
+	margin-left: 15px;
+}
+
+#left_month{
+	margin-right: 15px;
+}
+
+#right_month{
+	margin-left: 15px;
+}

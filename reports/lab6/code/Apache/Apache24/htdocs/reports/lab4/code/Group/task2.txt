@@ -1,0 +1,15 @@
+Код HTML - виклик блоку з тегом <script>
+
+<p><input type="checkbox" name="night club" value="night club" onclick="age_alert(this)"> <span>evening at a night club</span> </p>
+
+Код JavaScript - вставлений в тег <script>
+
+<script>
+	function age_alert(checkbox){
+		if(checkbox.checked == true) {
+			let isAdult = confirm("Вибираючи цю опцію, ви підтверджуєте, що вам вже виповнилося 18 років");
+			if(!isAdult)
+				checkbox.checked = false;
+		}
+	}
+</script>
