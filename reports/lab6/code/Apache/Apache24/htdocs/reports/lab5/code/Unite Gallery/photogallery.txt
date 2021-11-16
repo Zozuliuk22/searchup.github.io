@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+
+    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css'>
+    <script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>
+    <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
+    <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+    <script type='text/javascript' src="photogallery.js"></script>
+    <link rel="stylesheet" href="gallerystyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Photo gallery</h1>
+        <div id="gallery" style="display:none;">
+
+            <a href="http://unitegallery.net">
+                <img alt="This is example of event" src="images/gallery/gallery-1.jpg" style="display:none">
+            </a>
+
+            <a href="http://unitegallery.net">
+                <img alt="Zoom moment" src="images/gallery/gallery-2.jpg" style="display:none">
+            </a>
+
+            <a href="http://unitegallery.net">
+                <img alt="Anonymous" src="images/gallery/gallery-3.jpg" style="display:none">
+            </a>
+
+            <a href="http://unitegallery.net">
+                <img alt="Event" src="images/gallery/event-marketing.jpg" style="display:none">
+            </a>
+
+            <a href="http://unitegallery.net">
+                <img alt="Event" src="images/gallery/event-trends.jpg" style="display:none">
+            </a>
+
+            <a href="http://unitegallery.net">
+                <img alt="Event" src="images/gallery/events-heavenly-header.jpg" style="display:none">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

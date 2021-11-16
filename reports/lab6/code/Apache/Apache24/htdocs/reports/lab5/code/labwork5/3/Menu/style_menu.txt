@@ -1,0 +1,78 @@
+#slow_nav > ul{
+    font-weight: 600;
+    font-size: large;
+}
+
+#slow_nav > ul > li{
+    list-style: none;
+    display: inline-block;
+    position:relative;
+    padding:0;
+}
+
+#slow_nav a{
+  text-decoration:none;
+}
+
+#slow_nav > ul > li > a{
+  display:inline-block; /*поведінка відображення елемента : елемент є блочним та зберігає форму при зміні розміру сторінки (якщо буде замало місця елемент перенесется повністю, а не частиною )*/
+  margin: 0 20px;       /* ! тим самим задаємо мінімальну відстань між посиланнями  ! */
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s linear; /* перехід у тимчасовий стан : [колір] [час переходу] [лінійний тип переходу]. Перехід виконується під час зміни стану об'єкта (наприклад на об'єкт навели мишкою :hover)) */
+}
+
+#slow_nav ul li a:hover{
+    color: #00A676;
+}
+
+#slow_nav li ul{
+    position:absolute;
+    list-style:none;
+    text-align:center;
+    top:15px;
+    font-size:15px;
+    left:0;
+    margin:0;
+    padding:0;
+    display:none;
+}
+
+#slow_nav li ul li{
+    background-color: #153131;
+    border-bottom:1px solid #888;
+}
+
+#slow_nav li ul li:last-child{
+    border-bottom:none;
+}
+
+#slow_nav li ul li a{
+    padding:5px 12px;
+    color:#fff;
+    display:block;
+}
+
+#slow_nav li ul li a:hover{
+    color: #00A676;
+}
+
+#slow_nav li ul li:hover{
+    background-color:#153131;
+}
+
+#slow_nav li ul li:first-child{
+    margin-top:25px;
+    position:relative;
+}
+
+#slow_nav li ul li:first-child:before{
+    content:'';
+    position:absolute;
+    width:1px;
+    height:1px;
+    border:5px solid transparent;
+    border-bottom-color:#333;
+    left:10px;
+    top:-10px;
+}
