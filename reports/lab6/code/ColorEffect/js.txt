@@ -1,0 +1,21 @@
+<script>
+          $( function() {
+            var state = true;
+            $( "#button" ).on( "click", function() {
+              if ( state ) {
+                $( "#effect" ).animate({
+                  backgroundColor: "#ccff99",
+                  color: "#fff",
+                  width: 1000
+                }, 1000 );
+              } else {
+                $( "#effect" ).animate({
+                  backgroundColor: "#fff",
+                  color: "#000",
+                  width: 500
+                }, 1000 );
+              }
+              state = !state;
+            });
+          } );
+    </script>

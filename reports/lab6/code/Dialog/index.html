@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Dialog - Animation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: true,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="dialog" title="SearchUp Helper :)">
+  <p>WELCOME TO THE SITE !!!</p>
+</div>
+ 
+</body>
+</html>
