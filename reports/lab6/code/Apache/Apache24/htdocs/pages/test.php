@@ -7,9 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        echo "Action succesfully executed </br>";
-        echo "Time: " . date("h:i:sa");
+	Hello, <?php echo $_POST["nickname"]; ?>!<br>
+	Your email is <?php echo $_POST["email"]; ?>!<br>
+	Your password is <?php echo $_POST["password"]; ?>!<br>
+	<br>
+    <?php        
+		date_default_timezone_set('Europe/Kiev');
+        echo "Time: " . date('m/d/Y h:i:s a');
     ?>
+	<br>
+	Right?
 </body>
 </html>
