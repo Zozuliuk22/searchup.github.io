@@ -21,10 +21,10 @@
 		<div class="space"></div>
 
 		<div class = "registration">
-			<form method="POST" action="">
+			<form method="POST" action="test.php">
 				<p>
 					<h4>Nickname :
-					<input class="text-field" name="nickname"></h4>
+					<input class="text-field" type = "nickname" name="nickname"></h4>
 				</p>
 				<p>
 					<h4>First name :
@@ -36,7 +36,7 @@
 				</p>
 				<p>
 					<h4>Email :
-					<input class="text-field" name="email"></h4>
+					<input class="text-field" type = "email" name="email"></h4>
 				</p>
 				<p>
 					<h4>Password :
@@ -69,13 +69,8 @@
 					<p><input type="checkbox" name="literatury evening" value="literatury evening"> <span>literature evenings</span> </p>
 
 				<p><input id="send-button" type="submit" value = "Send"></p>
-			</form>
+			</form>		
 			
-			<?php
-				if(isset($_POST["submit"])){
-					echo "hello";
-				}
-			?>
 
 		</div>
 		
