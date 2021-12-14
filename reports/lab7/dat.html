@@ -130,23 +130,33 @@
             <h3><center><b>Лієнко Денис :</b></center></h3>
             <h3><center><b>11 варіант</b></center></h3>
             <h3>Даталогічна модель</h3>
-            <img src = "" width = 70%>
+            <img src = "code/Denys/data.jpg" width = 70%>
             <br>
             <h3>Перелік сутностей та їх атрибутів</h3>
             <ul>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
+              <li><h3>Abonent - абонент</h3></li>
+              <ul>
+                <li><h3>Id - ідентифікатор абонента</h3></li>
+                <li><h3>FullName - повне ім'я абоненту </h3></li>
+                <li><h3>Adress - його адреса проживання</h3></li>
+              </ul>
+              <li><h3>PhoneNumer - містить атрибут Number, який і містить сам номер</h3></li>
+              <li><h3>City - місто</h3></li>
+              <ul>
+                <li><h3>Index - ідентифікатор міста, його індекс</h3></li>
+                <li><h3>Name - назва міста</h3></li>
+              </ul>
+              <li><h3>Region - область</h3></li>
+              <ul>
+                <li><h3>Id - ідентифікатор області</h3></li>
+                <li><h3>Name - назва області</h3></li>
+              </ul>
             </ul>
             <h3>Зв'язки :</h3>
             <ul>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
-              <li><h3></h3></li>
+              <li><h3>PhoneNumers - Abonents: багато до одного</h3></li>
+              <li><h3>Abonents - Cities: багато до одного</h3></li>
+              <li><h3>Cities - Regions: багато до одного</h3></li>
             </ul>
             <br>
 					</td>
