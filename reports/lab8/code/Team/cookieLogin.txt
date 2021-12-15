@@ -1,0 +1,32 @@
+ [HttpGet]
+        public IActionResult Login()
+        {
+            string res;
+            Request.Cookies.TryGetValue("LastVisit", out res);            
+            return View(new LoginViewModel() { Username = res, Password = null});
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result =
+                    await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false);
+                if (result.Succeeded)
+                {
+                    DateTime now = DateTime.Now;
+                    Response.Cookies.Append("LastVisit", model.Username, new CookieOptions
+                    {
+                        Expires = now.AddHours(1)
+                    });
+                    return RedirectToAction("Index", "UserProfile");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Wrong login and(or) password");
+                }  
+            }            
+
+            return View(model);
+        }
