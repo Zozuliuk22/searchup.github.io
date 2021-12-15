@@ -1,0 +1,4 @@
+		[HttpPost]
+        public IActionResult Search(EventSearchViewModel viewModel){
+            return RedirectToAction("Index", new {viewModel.Page, viewModel.SearchStr});
+        }

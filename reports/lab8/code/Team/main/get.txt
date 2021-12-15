@@ -1,0 +1,57 @@
+public async Task<Event> GetEventByIdAsync(int eventId)
+        {
+            return await _context.Events
+                .Include(e => e.AttachedFiles)
+                .Include(e => e.Topics)
+                .Include(e => e.memberships)
+                    .ThenInclude(m => m.User)
+                        .ThenInclude(u => u.Avatars)
+                .FirstOrDefaultAsync(v => v.Id == eventId);  
+        }
+
+        public async Task<IEnumerable<Event>> GetVisitedByUserAsync(int userId)
+        {
+            var eventsId = await _context.EventMemberships
+                .Where(m => m.UserId == userId)
+                .Select(m => m.EventId).ToArrayAsync();
+            
+            return await _context.Events.Where(e => eventsId.Contains(e.Id))
+                .Include(e => e.Topics)
+                .ToListAsync();
+        }
+        public async Task<IEnumerable<Event>> GetOrganizedByUserAsync(int userId)
+        {
+            var eventsId = await _context.EventMemberships
+                .Where(m => m.UserId == userId && m.MemberType == MemberType.Organizer)
+                .Select(m => m.EventId).ToArrayAsync();
+
+            return await _context.Events.Where(e => eventsId.Contains(e.Id))
+                .Include(e => e.Topics)
+                .ToListAsync();
+        }
+        public async Task<IEnumerable<Event>> GetVisitedByUserAsParticipantAsync(int userId)
+        {
+            var eventsId = await _context.EventMemberships
+                .Where(m => m.UserId == userId && m.MemberType == MemberType.Participant)
+                .Select(m => m.EventId).ToArrayAsync();
+
+            return await _context.Events.Where(e => eventsId.Contains(e.Id))
+                .Include(e => e.Topics)
+                .ToListAsync();
+        }
+        public async Task<IEnumerable<Event>> GetBySearchRequestAsync(string searchRequest, int skip, int take)
+        {
+            return await _context.Events.Where(e => e.Title.Contains(searchRequest))
+                .Include(e => e.Topics)
+                .Skip(skip).Take(take)
+                .ToListAsync();
+        }
+        public async Task SubscribeAsync(int eventId, int userId)
+        {
+            var newMembership = new EventMembership(){
+                UserId = userId,
+                EventId = eventId,
+                MemberType = MemberType.Participant
+            };
+            await _context.EventMemberships.AddAsync(newMembership);
+        }

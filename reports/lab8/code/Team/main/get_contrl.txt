@@ -1,0 +1,28 @@
+		[HttpGet]
+        public async Task<IActionResult> Index(int page = 1, string searchStr = ""){
+            var viewModel = new EventSearchViewModel(){SearchStr=""};
+            if (searchStr != ""){
+                const int numOfResults = 10;
+                viewModel.Events = await _eventService.GetBySearchRequestAsync(searchStr, skip: numOfResults*(page-1), take: numOfResults);
+                viewModel.SearchStr = searchStr;
+            }
+            return View(viewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EventProfile(int id)
+        {
+            Event eventObj = await _eventService.GetEventByIdAsync(id);
+            var eventViewModel = new EventProfileViewModel(){
+                Id = eventObj.Id,
+                Title = eventObj.Title,
+                Description = eventObj.Description,
+                StartTime = eventObj.StartTime,
+                EndTime = eventObj.EndTime,
+                Participants = eventObj.memberships.Select(m => m.User).ToList(),
+                Topics = eventObj.Topics,
+                AttachedFiles = eventObj.AttachedFiles,
+                ChatId = eventObj.ChatId
+            };            
+            return View(eventViewModel);
+        }

@@ -1,0 +1,12 @@
+public async Task CreateAsync(Event eventModel, int creatorId)
+        {
+            var membership = new EventMembership(){Event = eventModel, UserId = creatorId, MemberType = MemberType.Organizer};
+            
+            if(eventModel.memberships == null)
+                eventModel.memberships = new List<EventMembership>(){membership};
+            else
+                eventModel.memberships.Add(membership);
+            
+            _context.Events.Add(eventModel);
+            await _context.SaveChangesAsync(); 
+        }
