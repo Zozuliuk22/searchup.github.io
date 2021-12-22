@@ -1,0 +1,5 @@
+<list>
+  <path>img/1.jpg</path>
+  <path>img/2.jpg</path>
+  <path>img/5.jpg</path>
+</list>

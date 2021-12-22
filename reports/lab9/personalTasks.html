@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Лаб 9</title>
+		<link rel="stylesheet" href="../style/lab1.css">
+    <style>iframe {background-color : white} </style>
+	</head>
+	<body>
+		<div class="head">
+			<br><p>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</p>
+			<p>З ДИСЦИПЛІНИ "ІНТЕРНЕТ-ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</p>
+			<p>Бригада №6 	|	Студенти групи ІС-02</p>
+			<br>
+		</div>
+
+		<div class = "labs">
+			<ul>
+				<li><a href="../index.html">Список студентів в бригаді</a></li>
+				<li><a href="../lab1/lab1.html">Лабораторна робота №1</a></li>
+				<li><a href="../lab2/lab2.html">Лабораторна робота №2</a></li>
+				<li><a href="../lab3/main.html">Лабораторна робота №3</a></li>
+				<li><a href="../lab4/main.html">Лабораторна робота №4</a></li>
+				<li><a href="../lab5/main.html">Лабораторна робота №5</a></li>
+				<li><a href="../lab6/main.html">Лабораторна робота №6</a></li>
+				<li><a href="../lab7/main.html">Лабораторна робота №7</a></li>
+				<li><a href="../lab8/main.html">Лабораторна робота №8</a></li>
+				<li><a href="../lab9/main.html">Лабораторна робота №9</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<table width = 100% cellpadding = 20px>
+				<tr>
+					<td width = 25% class = "menu" valign="top">
+						<ul>
+              <li><a href="main.html">Тема та Постановка задачі <br>Лабораторної роботи №9.<br>Посилання на ГітХаб</a></li>
+              <li><a href="personalTasks.html">Виконання другого пукту (Ajax-запит)<br>(Таблиця)</a></li>
+              <li><a href="teamTask.html">Асинхронні запити у власному сайті</a></li>
+              <li><a href="fullFunctions.html">Повний список функціоналу програми</a></li>
+              <li><a href="comprasion.html">Порівняння функціоналу першої<br>та дев'ятої лабораторних</a></li>
+              <li><a href="conclusions.html">ВИСНОВКИ</a></li>
+						</ul>
+					</td>
+
+					<td>
+						<h1><center>Виконання другого пукту (Ajax-запит)</center></h1>
+            <br>
+            <h2><center><b>Індивідуальне завдання</b></center></h2>
+            <br>
+            <h3><center><b>Винник Віталій :</b></center></h3>
+            <h3><center><b>3 варіант</b></center></h3>
+            <h3>Реалізувати можливість інтерактивної перевірки коректності заповнення HTML-форми реєстрації користувача. Включити такі елементи:
+								1) довжина та складність пароля; 2) перевірка наявності імені користувача в системі; 3) інтерактивна підказка країни та міста мешкання.
+								Поля та їх типи для перевірки та підказки про помилки взяти з XML-файлу. Усі перевірки виконувати (і сигналізувати в разі помилки) інтерактивно. Результати перевірки заносити в інший XML-файл.
+						</h3>
+            <br>
+						<h3>Власне візуальний вигляд форми реєстрації</h3>
+						<img src = "code/Vitaliy/1.jpg" width = 30%>
+						<br>
+						<h3>Код XML збереження користувача у файлі</h3>
+						<img src = "code/Vitaliy/2.jpg" width = 35%>
+						<br>
+						<h3>Створюємо вже існуючого користувача</h3>
+						<img src = "code/Vitaliy/3.jpg" width = 30%>
+						<br>
+						<h3>Як бачимо, працює перевірка і ніяких змін при створенні вже існуючого користувача, не відбувається.</h3>
+						<h3>Створюємо нового користувача</h3>
+						<img src = "code/Vitaliy/4.jpg" width = 35%>
+						<br>
+						<h3>Аналогічно і з паролем</h3>
+						<img src = "code/Vitaliy/5.jpg" width = 30%>
+						<br>
+						<h3>Логування перевірок</h3>
+						<img src = "code/Vitaliy/6.jpg" width = 65%>
+						<br>
+						<br>
+						<h3><a href = "https://github.com/VynnykV/Web/tree/master/lab%209">Посилання на GitHub</a></h3>
+            <br>
+
+            <h3><center><b>Зозулюк Віктор :</b></center></h3>
+            <h3><center><b>6 варіант</b></center></h3>
+            <h3>Реалізувати можливість створення фотогалереї із функціями додавання та вилучення зображення, а також перегляду наявних фотографій як окремо, так і у вигляді слайд-шоу. Файли зображень завантажувати на сервер, інформацію про список файлів зберігати у XML-файлі на сервері. </h3>
+						<br>
+						<h3>Власне головна сторінка реалізованого ресурсу
+							<br>з доданою галереєю та слайдером</h3>
+						<img src = "code/Viktor/main1.png" width = 80%>
+						<h3>Початковий запис у файл xml</h3>
+						<iframe src = "code/Viktor/xml1.txt" width="100%" height = "100px"></iframe>
+            <br>
+						<h3>Додавання зображень за допомогою ajax</h3>
+						<img src = "code/Viktor/main2.png" width = 80%>
+						<h3>Запис у файл xml після додавання</h3>
+						<iframe src = "code/Viktor/xml2.txt" width="100%" height = "130px"></iframe>
+            <br>
+						<h3>Видалення зображень за допомогою ajax</h3>
+						<img src = "code/Viktor/main3.png" width = 80%>
+						<h3>Запис у файл xml після видалення</h3>
+						<iframe src = "code/Viktor/xml3.txt" width="100%" height = "100px"></iframe>
+            <br>
+            <h3>Програмний код - HTML :</h3>
+						<iframe src = "code/Viktor/index.txt" width="100%" height = "400px"></iframe>
+						<br>
+						<h3>Програмний код - CSS :</h3>
+						<iframe src = "code/Viktor/style.txt" width="100%" height = "400px"></iframe>
+						<br>
+						<h3>Список файлів jquery для нормальної роботи слайдера та галереї</h3>
+						<img src = "code/Viktor/jquery.jpg" width = 80%>
+						<br>
+						<br>
+						<h3><a href = "https://github.com/Zozuliuk22/Lab9.git">Посилання на GitHub</a></h3>
+            <br>
+
+            <h3><center><b>Кальченко Єгор :</b></center></h3>
+            <h3><center><b>7 варіант</b></center></h3>
+            <h3>Реалізувати можливість побудови гістограми засобами CSS. Кожний стовпчик гістограми будувати на основі генерації псевдовипадкового числа (або при уведенні користувачем), який додається у файл на сервері у форматі XML у асинхронному режимі. За сигналом від таймера оновлювати зображення гістограми. </h3>
+
+            <br>
+            <h3></h3>
+
+            <br>
+
+            <h3><center><b>Лієнко Денис :</b></center></h3>
+            <h3><center><b>11 варіант</b></center></h3>
+            <h3>Реалізувати динамічне формування і завантаження меню та відповідної Web-сторінки без перезавантаження основної сторінки. Структуру меню, включаючи вкладені рівні необхідно завантажувати з XML-файлу.</h3>
+            <br>
+						<h3>Додавання сервісу, який дозволяє повертати xml в якості результату на запит</h3>
+						<img src = "code/Den/1.png" width = 50%>
+						<br>
+						<h3>Клас опції</h3>
+						<img src = "code/Den/2.png" width = 35%>
+						<br>
+						<h3>Переконаємося в Postman'і, що апі повертає xml</h3>
+						<img src = "code/Den/3.png" width = 80%>
+						<br>
+						<h3>Контролер, який обробляє запити та відправляє відповідь</h3>
+						<img src = "code/Den/4.png" width = 80%>
+						<br>
+						<h3>Логування запитів в xml</h3>
+						<img src = "code/Den/5.png" width = 80%>
+						<img src = "code/Den/6.png" width = 80%>
+						<br>
+						<h3>Клієнтська частина</h3>
+						<img src = "code/Den/7.png" width = 80%>
+						<br>
+						<h3>Результат виконання</h3>
+						<img src = "code/Den/8.png" width = 100%>
+						<br>
+						<br>
+						<h3><a href = "https://github.com/DeniesLie/labsweb/tree/main/lab9">Посилання на GitHub</a></h3>
+						<br>
+						<br>
+						<br>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="bottom">
+			<br><p>&#169;Розроблено студентами групи ІС-02</p><br>
+		</div>
+	</body>
+</html>

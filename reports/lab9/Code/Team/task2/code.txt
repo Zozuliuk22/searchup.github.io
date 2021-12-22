@@ -1,0 +1,67 @@
+ <script src="/js/signalr/dist/browser/signalr.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chatHub")
+            .build();
+
+        connection.on("ReceiveMessage", function (data) {
+            console.log(data);
+            var message = document.createElement("div");
+            message.classList.add("message_item");
+            var messageContent = document.createElement("div");
+            messageContent.classList.add("message_content");
+            var sender = document.createElement("div");
+            sender.classList.add("sender");
+            sender.appendChild(document.createTextNode(data.sender))
+            var text = document.createElement("div");
+            text.classList.add("text");
+            text.appendChild(document.createTextNode(data.text));
+            var timestamp = document.createElement("div");
+            timestamp.classList.add("timestamp");
+            timestamp.appendChild(document.createTextNode(data.timestamp));
+            var picture = document.createElement("img");
+            picture.classList.add("user-picture");
+            picture.setAttribute('src','/images/user.png')
+            messageContent.appendChild(sender);
+            messageContent.appendChild(text);
+            messageContent.appendChild(timestamp);
+            message.appendChild(picture);
+            message.appendChild(messageContent);
+            document.querySelector('.messages').append(message);
+            var block = document.querySelector(".messages");
+            block.scrollTop = block.scrollHeight;
+        })
+
+        var joinRoom = function () {
+            connection.invoke('joinRoom','@Model.CurrentChat.Id')
+                .then(res => {
+                    console.log("Room Joined!", res);
+                })
+                .catch(err => {
+                    console.error("Failed to join Room",err);
+                })
+        }
+
+        connection.start()
+            .then(function () {
+                joinRoom();
+            })
+            .catch(function (err) {
+                console.log(err)
+            })
+
+        var sendMessage = function (event) {
+            event.preventDefault();
+
+            var data = new FormData(event.target);
+            document.getElementById('message-input').value = '';
+            connection.invoke('sendMessage', parseInt(@Model.CurrentChat.Id),'@User.Identity.Name', data.get('text'))
+                .then(res => {
+                    console.log("Message Sent!")
+                })
+                .catch(err => {
+                    console.log("Failed to send message!")
+                })
+        }
+    </script>
