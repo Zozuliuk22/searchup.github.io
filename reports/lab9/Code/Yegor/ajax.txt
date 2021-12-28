@@ -1,0 +1,36 @@
+@model Lab9.Models.Input
+@{
+    ViewData["Title"] = "Home Page";
+}
+<title>Гистограмма</title>
+
+@using (Html.BeginForm("UpdateData", "Home", FormMethod.Post))
+{
+    <div class="col-sm-7">
+            <input asp-for="@Model.A" class="form-control" id="inputA">
+    </div>
+    <div class="col-sm-7">
+            <input asp-for="@Model.B" class="form-control" id="inputB">
+    </div>
+    <input class="btn waves-effect waves-light my-button" id="update_container" type="submit" value="Submit" />
+    
+}
+
+<script type="text/javascript">
+    jQuery(function($){
+        $('#update_container').click(function(e){
+        e.preventDefault();
+
+        var $this = $(this);
+
+        $.ajax({
+            url: $this.attr('href'),
+            success: function(data){
+                $('gistogramma').html(data);
+            }
+        });
+        });
+    })
+</script>
+
+@Html.Partial("UpdateData", Model);
